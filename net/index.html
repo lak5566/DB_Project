@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珍愛地球系統</title>
+    <style type="text/css">
+        #sitebody{
+            width:100%;
+            margin:0 auto;
+            font-size:13px;
+        }
+        #header{
+            background-color:#FFD4D4;
+            width:100%;
+            height:80px;
+            text-align:center;
+        }
+        #sidebar_left{
+            background-color:#FFECC9;
+            width:20%;
+            height:400px;
+            text-align:center;
+            float:left;
+        }
+        #sidebar_right{
+            background-color:#FFECC9;
+            width:20%;
+            height:400px;
+            text-align:center;
+            float:right;
+        }
+        #content{
+            margin-left:120px;
+            margin-right:120px;
+            height:400px;
+            background-color:#F2FFF2;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="sitebody">
+        <div id="header">
+            <h4>珍愛地球系統</h4>
+            <a href="MyItem.html">我的交換物</a>
+            <a href="Change.html">物品交換</a>
+            <a href="Record.html">交易紀錄</a>
+            <a href="MyLove.html">我的最愛</a>
+        </div>
+        <div id="sidebar_left">
+            <h4>全站分類</h4>
+        </div>
+        <div id="sidebar_right">
+            <h4>會員登入/註冊</h4>
+            <form action="">
+                帳號<input type="text"><br>
+                密碼<input type="text"><br>
+                <a href="">忘記密碼</a>
+                <img src="" alt=""><input type="text">
+                <input type="button" value="註冊" onclick="location.href='sign.html'">
+                <input type="button" value="登入">
+            </form>
+        </div>
+        <div id="content">
+            <label for="site-search"></label>
+            <input type="search" name="q" id="site-search">
+            <button>搜尋</button>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="button" value="發布貼文" onclick="location.href='post.html'">
+        </div>
+    </div>
+</body>
+</html>
