@@ -40,15 +40,35 @@
     <div id="sitebody">
         <div id="content">
             <h1>新增貼文</h1>
-            <form action="">
+            <form action="/somewhere/to/upload" enctype="multipart/form-data">
                 物品 &emsp;&emsp;&emsp;&emsp;<input type="text"><br><br>
                 數量 &emsp;&emsp;&emsp;&emsp;<input type="text"><br><br>
                 所在地 &emsp;&emsp;&emsp;<input type="text"><br><br>
                 想要的東西 &emsp;<input type="text"><br><br>
-                圖片 &emsp;<input type="image" src="" alt="尚未上傳圖片">&emsp;<input type="button" value="上傳圖片"><br><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;圖片 &emsp;&emsp;&emsp;&emsp;
+                <input type="file" onchange="readURL(this)" targetID="preview_progressbarTW_img" accept="image/gif, image/jpeg, image/png" ><br><br>
+                <img id="preview_progressbarTW_img" src="#"><br><br>
                 <input type="button" value="發布貼文" onclick="location.href='MyItem.html'"><br>
-            </form>
+            </form><br><br>
+            <script>
+                function readURL(input)
+                {
+                  if(input.files && input.files[0])
+                  {
+                    var imageTagID = input.getAttribute("targetID");
+                    var reader = new FileReader();
+                    reader.onload = function (e)
+                    {
+                       var img = document.getElementById(imageTagID); 
+                       img.setAttribute("src", e.target.result)
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                  }    
+                }               
+            </script>
+            <input type="button" value="返回" onclick="location.href='index.html'">
         </div>
     </div>
 </body>
 </html>
+
