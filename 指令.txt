@@ -1,6 +1,10 @@
-git add .
-git commit -m "一段敘述"
-git push origin master
+git add .			加入即將上傳的資料
+git commit -m "一段敘述"	打包並給予一段該次更動的敘述
+git push origin master	上傳打包好的資料
+*******************************************************
+請務必要在每次開工前先更新資料
+git pull origin		下載別人上傳的新資料
+*******************************************************
 
 *** Please tell me who you are.
 
