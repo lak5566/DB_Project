@@ -38,29 +38,12 @@
                         <textarea class="form-control" id="content" name="content" rows="5"placeholder="輸入訊息" required></textarea>
                     </div>
                     <div align="right">
-                        <button type="submit" class="btn btn-default" button onclick="submitHandler()">寄出</button>
+                        <button type="submit" class="btn btn-default" id="sendoutBtn">寄出</button>
                     </div>
-                    
                 </form>
-                <?php 
-                    if(@$_POST['nickname']!='')
-                    {
-                        $nickname=$_POST['nickname'];
-                        $email=$_POST['email'];
-                        $sub=$_POST['subject'];
-                        $content=$_POST['content'];
-
-                        mb_internal_encoding("utf-8");
-                        $to="40743254@gmail.com";//填入自己的電子信箱
-                        $subject=mb_encode_mimeheader("$sub","utf-8");
-                        $message="$content";
-                        $headers="MIME-Version: 1.0\r\n";
-                        $headers.="Content-type: text/html; charset=utf-8\r\n";
-                        $headers.="From:".mb_encode_mimeheader("$nickname","utf-8")."<$email>\r\n";
-                        mail($to,$subject,$message,$headers);
-                    }
-                ?>
             </div>
         </div>
     </body>
 </html>
+
+<script> src="../js/mailto.js"</script>
