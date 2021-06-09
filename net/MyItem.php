@@ -45,7 +45,7 @@
                 <input type="search" name="q" id="site-search">
                 <button>搜尋</button>
                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                <input type="button" value="新增貼文" onclick="location.href='post.html'">
+                <input type="button" value="新增貼文" onclick="location.href='post.php'">
             </form>
             
         </div>

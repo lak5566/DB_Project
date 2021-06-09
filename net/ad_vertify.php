@@ -84,8 +84,8 @@
                         <td>6</td>
                     </tr>
                   </table><br>
-                <input type="button" value="審核" onclick="location.href='ad_vertify1.html'">&emsp;&emsp;
-                <input type="button" value="返回設定" onclick="location.href='ad_setting.html'"><br>
+                <input type="button" value="審核" onclick="location.href='ad_vertify1.php'">&emsp;&emsp;
+                <input type="button" value="返回設定" onclick="location.href='ad_setting.php'"><br>
             </form>
         </div>
     </div>

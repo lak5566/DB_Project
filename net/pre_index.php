@@ -61,8 +61,9 @@
                 密碼<input type="text" placeholder="請輸入密碼"><br>
                 <a href="">忘記密碼</a><br><br>
                 <!--<img src="" alt=""><input type="text"><br>-->
-                <input type="button" value="註冊" onclick="location.href='sign.html'">
-                <input type="button" value="登入" onclick="location.href='index.html'">
+                <input type="button" value="註冊" onclick="location.href='sign.php'">
+                <input type="button" value="登入" onclick="location.href='index.php'">
+                
             </form>
         </div>
         <div id="content"><br>
@@ -71,11 +72,11 @@
             <button>搜尋</button>
         </div>
         <div id="bottom">
-            <a href="Organization.html">社福機構</a>&emsp;
-            <a href="Service.html">客服協助</a>&emsp;
-            <a href="Copyright.html">版權宣告</a>&emsp;
-            <a href="Information.html">聯絡資訊</a>&emsp;
-            <a href="AboutUs.html">關於我們</a>
+            <a href="Organization.php">社福機構</a>&emsp;
+            <a href="Service.php">客服協助</a>&emsp;
+            <a href="Copyright.php">版權宣告</a>&emsp;
+            <a href="Information.php">聯絡資訊</a>&emsp;
+            <a href="AboutUs.php">關於我們</a>
         </div>
     </div>
 </body>

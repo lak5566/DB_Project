@@ -64,7 +64,7 @@
                 <input type="radio" name="pass" id="pass">通過<br>
                 <input type="radio" name="pass" id="Npass">未通過<br><br>
                 <input type="submit" value="送出">&emsp;
-                <input type="button" value="返回審核貼文列表" onclick="location.href='ad_vertify.html'"><br>
+                <input type="button" value="返回審核貼文列表" onclick="location.href='ad_vertify.php'"><br>
             </form>
         </div>
     </div>

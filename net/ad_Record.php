@@ -51,7 +51,8 @@
                     <th>物品所在地</th>
                 </tr>
                 <tr>    
-                    <td><input type="radio" name="check" id="check1"></td>
+                    <td>0</td>
+                    <td>1</td>
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
@@ -59,7 +60,8 @@
                     <td>6</td>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="check" id="check2"></td>
+                    <td>0</td>
+                    <td>1</td>
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
@@ -67,7 +69,8 @@
                     <td>6</td>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="check" id="check3"></td>
+                    <td>0</td>
+                    <td>1</td>
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
@@ -75,7 +78,8 @@
                     <td>6</td>
                 </tr>  
                 <tr>
-                    <td><input type="radio" name="check" id="check4"></td>
+                    <td>0</td>
+                    <td>1</td>
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
@@ -84,7 +88,7 @@
                 </tr>
             </table><br><br>
             圖片預設位置<br><br>
-            <input type="button" value="返回" onclick="location.href='index.html'">
+            <input type="button" value="返回" onclick="location.href='index.php'">
         </div>
     </div>
 </body>

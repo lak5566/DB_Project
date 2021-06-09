@@ -41,13 +41,13 @@
         <div id="content">
             <h1>設定</h1><br>
             <form action="">
-                <input type="button" value="審核貼文" onclick="location.href='ad_vertify.html'">&emsp;&emsp;&emsp;&emsp;
-                <input type="button" value="匯出交易紀錄" onclick="location.href='ad_Record.html'"><br><br><br><br>
+                <input type="button" value="審核貼文" onclick="location.href='ad_vertify.php'">&emsp;&emsp;&emsp;&emsp;
+                <input type="button" value="匯出交易紀錄" onclick="location.href='ad_Record.php'"><br><br><br><br>
                 使用者姓名：&emsp;<input type="search" name="q" id="site-search">&emsp;
                 <button>搜尋</button><br><br>
                 物品&emsp;&emsp;&emsp;：&emsp;<input type="search" name="q" id="site-search">&emsp;
                 <button>搜尋</button><br><br><br>
-                <input type="button" value="返回" onclick="location.href='index.html'">
+                <input type="button" value="返回" onclick="location.href='index.php'">
             </form>
         </div>
     </div>

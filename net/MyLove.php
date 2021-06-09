@@ -83,7 +83,7 @@
                 </tr>
             </table><br><br>
             圖片預設位置<br><br>
-            <input type="button" value="返回" onclick="location.href='index.html'">
+            <input type="button" value="返回" onclick="location.href='index.php'">
         </div>
     </div>
 

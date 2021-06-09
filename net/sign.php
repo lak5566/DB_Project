@@ -48,9 +48,9 @@
                 電子郵件 &emsp;&emsp;<input type="text" placeholder="請輸入電子郵件"><br><br>
                 密碼 &emsp;&emsp;&emsp;&emsp;<input type="text" placeholder="請輸入密碼"><br><br>
                 確認密碼 &emsp;&emsp;<input type="text" placeholder="請重新輸入密碼"><br><br><br>
-                <input type="checkbox" name="" id="">同意使用條款<a href="article.html"></a><br><br>
-                <input type="button" value="送出" onclick="location.href='pre_index.html'">&emsp;&emsp;
-                <input type="button" value="返回" onclick="location.href='pre_index.html'"><br>
+                <input type="checkbox" name="" id="">同意使用條款<a href="article.php"></a><br><br>
+                <input type="button" value="送出" onclick="location.href='pre_index.php'">&emsp;&emsp;
+                <input type="button" value="返回" onclick="location.href='pre_index.php'"><br>
             </form>
         </div>
     </div>

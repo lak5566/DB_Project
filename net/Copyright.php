@@ -16,7 +16,7 @@
     </head>
     <body style="color:blue;">
         <div id="body"> 
-            著作權 © 2021 作業系統 第九組 版權所有
+            著作權 © 2021 資料庫 第九組 版權所有
         </div>
     </body>
 </html>
