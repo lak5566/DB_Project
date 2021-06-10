@@ -39,15 +39,49 @@
 <body>
     <div id="sitebody">
         <div id="content">
-            <h1>我的貼文</h1>
+            <h1>我的貼文列表</h1><br>
             <form action="">
-                <label for="site-search"></label>
-                <input type="search" name="q" id="site-search">
-                <button>搜尋</button>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                <input type="button" value="新增貼文" onclick="location.href='post.html'">
+                <input type="button" value="新增貼文" onclick="location.href='post.html'"><br><br>
+                <table align="center" border="1" width="500">
+                    <tr>
+                        <th>觀看圖片</th>
+                        <th>類型</th>
+                        <th>物品名稱</th>
+                        <th>數量</th>
+                        <th>物品所在地</th>
+                    </tr>
+                    <tr>    
+                        <td><input type="radio" name="MyItem_check" id="MyItem_check1"></td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="MyItem_check" id="MyItem_check2"></td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="MyItem_check" id="MyItem_check3"></td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>  
+                    <tr>
+                        <td><input type="radio" name="MyItem_check" id="MyItem_check4"></td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </table><br>
+                圖片預設位置<br><br>
+                <input type="button" value="返回" onclick="location.href='index.html'">
             </form>
-            
         </div>
     </div>
 </body>
