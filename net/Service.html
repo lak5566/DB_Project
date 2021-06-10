@@ -14,13 +14,13 @@
         </style>
     </head>
 
-    <body>
+    <body onload="init()">
         <div class="mail">
             <div class="container">
                 <div class="header" style="text-align:center; font-size:24px; padding:30px 0">
                 聯絡我
                 </div>
-                <form id="msg" name="msg" method="post" action="" >
+                <form id="msg" name="msg" enctype="text/plain" accept-charset="utf-8">
                     <div class="form-group">
                         <label for="nickname">暱稱</label>
                         <input type="text" class="form-control" id="nickname" name="nickname" placeholder="輸入您的暱稱" required >
@@ -35,10 +35,11 @@
                     </div>
                     <div class="form-group">
                         <label for="content">信件內容</label>
-                        <textarea class="form-control" id="content" name="content" rows="5"placeholder="輸入訊息" required></textarea>
+                        <textarea class="form-control" id="content" name="content" rows="5"placeholder="輸入訊息" ></textarea>
                     </div>
                     <div align="right">
-                        <button type="submit" class="btn btn-default" id="sendoutBtn">寄出</button>
+                        <button type="submit" class="btn btn-default" onclick="sendout()">寄出</button>
+                        <a id="mailTo"></a>
                     </div>
                 </form>
             </div>
@@ -46,4 +47,4 @@
     </body>
 </html>
 
-<script> src="../js/mailto.js"</script>
+<script src="../js/Service.js"></script>
