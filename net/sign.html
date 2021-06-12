@@ -35,24 +35,35 @@
             text-align:center;
         }
     </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <div id="sitebody">
         <div id="content">
             <h1>會員註冊</h1>
-            <form action="">
+            <form>
                 姓氏 &emsp;&emsp;&emsp;&emsp;<input type="text" placeholder="請輸入姓氏"><br><br>
                 名字 &emsp;&emsp;&emsp;&emsp;<input type="text" placeholder="請輸入名字"><br><br>
                 身分證字號 &emsp;<input type="text" placeholder="請輸入身分證字號"><br><br>
                 地址 &emsp;&emsp;&emsp;&emsp;<input type="text" placeholder="請輸入地址"><br><br>
                 電子郵件 &emsp;&emsp;<input type="text" placeholder="請輸入電子郵件"><br><br>
                 密碼 &emsp;&emsp;&emsp;&emsp;<input type="text" placeholder="請輸入密碼"><br><br>
-                確認密碼 &emsp;&emsp;<input type="text" placeholder="請重新輸入密碼"><br><br><br>
-                <input type="checkbox" name="" id="">同意使用條款<a href="article.html"></a><br><br>
-                <input type="button" value="送出" onclick="location.href='pre_index.html'">&emsp;&emsp;
-                <input type="button" value="返回" onclick="location.href='pre_index.html'"><br>
+                確認密碼 &emsp;&emsp;<input type="text" placeholder="請重新輸入密碼"><br>
+                
+                <form id="reg_form" method="post" >
+                    <p>請輸入驗證碼：</p>
+                    <p><img id="imgcode" src="../php/captcha.php" onclick="refresh_code()" />&emsp;
+                        <input type="text" name="vcode" size="10" maxlength="10" placeholder="請輸入左方圖形驗證碼" class="form-control form-control-user reg_vcode" id="reg_vcode">
+                        <span class="vcode_hint"></span></p>
+                    <input type="checkbox" name="" id="">同意使用條款<a href="article.html"></a><br><br>
+                    <button type="button" class="red_button form-btn" onclick="location.href='pre_index.html'" >送出</button>
+                    <input type="button" value="返回" onclick="location.href='pre_index.html'">
+                </form>
             </form>
         </div>
     </div>
 </body>
 </html>
+
+
+<script src="../js/sign_captcha.js"></script>
