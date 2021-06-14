@@ -25,6 +25,6 @@ function showSite(str) {
             }
         }
         //此方法傳遞了三個參數。 'GET'確定httprequest的類型。 'Record.php'設置後端文件，並設置第三個參數'true'表示異步處理請求。
-    xmlhttp.open("GET", "../php/index.php?name=" + str, true);
+    xmlhttp.open("GET", "../php/index.php?item_search=" + str, true);
     xmlhttp.send();
 }
