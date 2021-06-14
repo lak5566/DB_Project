@@ -46,7 +46,7 @@
     <div id="sitebody">
         <div id="content">
             <h1>新增貼文</h1>
-            <form id='myform' action="../php/post.php" enctype="multipart/form-data">
+            <form id='myform' action="../php/post.php" enctype="multipart/form-data" method="GET">
                 物品 &emsp;&emsp;&emsp;&emsp;<input type="text" name="item"><br><br> 數量 &emsp;&emsp;&emsp;&emsp;<input type="text" name="quantity"><br><br> 所在地 &emsp;&emsp;&emsp;<input type="text" name="address"><br><br> 想要的東西 &emsp;<input type="text" name="want"><br><br>                結束日期 &emsp;&emsp;&emsp;&emsp;
                 <input type="date" name="day" id=""><br><br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;圖片 &emsp;&emsp;&emsp;&emsp;
                 <input type="file" onchange="readURL(this)" targetID="preview_progressbarTW_img" accept="image/gif, image/jpeg, image/png" name="picture"><br><br>
@@ -72,3 +72,4 @@
 </body>
 
 </html>
+<script src="../js/post.js "></script>
