@@ -18,9 +18,9 @@ if($_GET['item_search'] != "") {
     @$n = $_GET['item_search'];
     /*從record資料表，撈取所有欄位(用*米字號)，當所傳來的值是字首、中、尾有符合(LIKE)資料UID_1欄位的名字，
       就會呼叫出來，並且透過id欄位來設定為升序(ASC是升序(小跑到大)、DESC是降序(大跑到小))*/
-    $sql = "SELECT item.item_name,item.GID,post.quantity,post.PID,post.item_address, post.description, post.poster FROM post, item Where item.GID = post.GID AND item.item_name = '$n'";
-    $record_result = mysqli_query($les_conn,$sql);
-    if (!$record_result) {
+    $sql = "SELECT item.name,item.GID,post.quantity,post.PID,post.item_address, post.description, post.poster FROM post, item Where item.GID = post.GID AND item.name = '$n'";
+    $item_search_result = mysqli_query($les_conn,$sql);
+    if (!$item_search_result) {
         printf("Error: %s\n", mysqli_error($les_conn));
         exit();
     }
@@ -39,11 +39,11 @@ echo "<table>
    <th>發布者</th>
    </tr>";
 
-while($row = mysqli_fetch_array($record_result))
+while($row = mysqli_fetch_array($item_search_result))
 {
   echo "<tr>";
   echo "<td>" . $row['GID'] . "</td>";
-  echo "<td>" . $row['item_name'] . "</td>";
+  echo "<td>" . $row['name'] . "</td>";
   echo "<td>" . $row['PID'] . "</td>";
   echo "<td>" . $row['quantity'] . "</td>";
   echo "<td>" . $row['item_address'] . "</td>";

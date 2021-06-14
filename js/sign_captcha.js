@@ -1,5 +1,3 @@
-
-//javascript
 function refresh_code(){ 
     document.getElementById("imgcode").src="../php/captcha.php"; 
     console.log("refresh_code()");

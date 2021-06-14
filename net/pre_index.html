@@ -58,11 +58,10 @@
         <div id="sidebar_right">
             <h4>會員登入/註冊</h4>
             <form action="">
-                帳號<input type="text" placeholder="請輸入帳號"><br>
+                帳號<input type="text" placeholder="請輸入帳號"><br><br>
                 密碼<input type="text" placeholder="請輸入密碼"><br>
                 <a href="">忘記密碼</a><br><br>
                 <form id="reg_form" method="post" >
-                    <p>請輸入驗證碼：</p>
                     <p><img id="imgcode" src="../php/captcha.php" onclick="refresh_code()" />&emsp;
                     <input type="text" name="vcode" size="10" maxlength="10" placeholder="請輸入左方圖形驗證碼" class="form-control form-control-user reg_vcode" id="reg_vcode">
                     <span class="vcode_hint"></span></p>
