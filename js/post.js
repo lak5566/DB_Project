@@ -1,0 +1,1 @@
+document.getElementById('theForm').action = 'post.php';
